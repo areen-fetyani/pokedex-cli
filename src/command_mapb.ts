@@ -6,7 +6,7 @@ export async function commandMapb(state: State) {
     return;
   }
 
-  const data = await state.pokeapi.fetchLocations(state.prevLocationsURL);
+  const data = await state.pokeAPI.fetchLocations(state.prevLocationsURL);
 
   for (const loc of data.results) {
     console.log(loc.name);
